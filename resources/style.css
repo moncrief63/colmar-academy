@@ -1,6 +1,7 @@
 html{
-  font-size: 16px;
+  font-size: 18px;
   font-family: Helvetica;
+  width: 1350px;
 }
 
 /*Header*/
@@ -33,6 +34,9 @@ header nav{
 header nav span {
   margin: 16px;
 }
+.icons{
+  display: none;
+}
 /*Banner*/
 .top{
   display: flex;
@@ -41,18 +45,243 @@ header nav span {
 .top img{
   width: 60%;
   margin: 32px 24px;
+  height: auto;
 }
 .top .caption{
-  color: DarkGray;
-  display: block;
+  color: DarkSlateGray;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 25%;
 }
-.top h1{
+.top .caption h1{
   font-weight: bold;
   font-size: 2.3rem;
 }
-.top h2{
+.caption p {
+  margin: 16px;
+}
+.caption .btn{
   color: LightGray;
-  background-color: DarkGray
-  padding: 8px 128px;
+  background-color: DarkSlateGray;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+}
+.caption a {
+  color: LightGray;
+}
+ /*Second Section*/
+ .second{
+   display: flex;
+   width: 100%;
+ }
+ .second .left{
+   width: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: left;
+   margin-left: 24px;
+   margin-right: 24px;
+ }
+ .second .left img{
+   margin-top: 32px;
+   width: 100%;
+ }
+ .left h2{
+   font-size: 2.3rem;
+   font-weight: bold;
+   color: DarkSlateGray;
+   margin-bottom: 24px;
+   margin-top: 24px;
+ }
+ .second .left{
+   text-align: left;
+   font-size: .7rem;
+ }
+ .left p{
+   font-size: 1.5rem;
+   margin-bottom: 24px;
+ }
+ .second .right{
+   width: 40%;
+   margin-top: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+ }
+ .second .right img{
+   width: 35%;
+   height: 35%;
+   padding: 16px;
+ }
+ .caps{
+   width: 65%;
+ }
+ .caps p{
+   margin: 8px auto;
+ }
+ .caps h4{
+   font-size: 1.33rem;
+   font-weight: bolder;
+ }
+ .date{
+   display: flex;
+   background-color: LightGray;
+   align-items: center;
+ }
+.campus {
+  display: flex;
+  align-items: center;
+}
+.lecture {
+  display: flex;
+  background-color: LightGray;
+  align-items: center;
+}
+/*Learning Section*/
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 40px;
+  width: 100%;
+}
+.learning h2{
+  text-align: center;
+  font-size: 2.333rem;
+  font-weight: bold;
+  color: DarkSlateGray;
+  margin-top: 32px;
+  padding-top: 32px;
+}
+.learning {
+  background-color: LightGray;
+}
+.courses{
+  flex-wrap: wrap;
+}
+.courses div{
+  background-color: white;
+  margin: 32px;
+  width: 25%;
+  height: 40%;
+}
+.courses .caps2{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+}
+.courses .caps2 h3{
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: DarkSlateGray;
+}
+.courses .caps2 h4{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.courses div img{
+  height: auto;
+  width: 100%;
+}
+/*Thesis Exhibit*/
+.info{
+  display: flex;
+}
+.thesis h2{
+  font-size: 2.33rem;
+  font-weight: bolder;
+  color: DarkSlateGray;
+  text-align: center;
+}
+.video{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+video{
+  width: 90%;
+  height: auto;
+  margin: 24px;
+}
+.content h3{
+  padding-bottom: 8px;
+  font-size: 2.33rem;
+  color: DarkSlateGray;
+  font-weight: bolder;
+}
+.content{
+  width: 60%;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  padding-left: 40px;
+}
+.right2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right2 img{
+  width: 35%;
+  height: 35%;
+  margin: 16px;
+}
+.right2 h4{
+  font-size: 1.33rem;
+  color: DarkSlateGray;
+  font-weight: bolder;
+  margin-bottom: 16px;
+}
+.fisma {
+  display: flex;
+  background-color: LightGray;
+  align-items: center;
+}
+.now {
+  display: flex;
+  align-items: center;
+}
+.caps3{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+/*Footer*/
+footer{
+  padding: 16px 24px;
+  font-size: .8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*MOBILE MOBILE MOBILE*/
+@media only screen and (max-width: 470px){
+  header{
+    width: 100%;
+  }
+  header .logo h1{
+    display: none;
+  }
+  header .logo h2{
+    display: none;
+  }
+  header nav{
+    display: none;
+  }
+  header .icons{
+    display: flex;
+  }
 }
